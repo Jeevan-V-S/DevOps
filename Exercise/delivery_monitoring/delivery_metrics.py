@@ -10,7 +10,7 @@ average_delivery_time = Summary("average_delivery_time", "Average delivery time 
 
 # Simulate delivery statuses
 def simulate_delivery():
-    pending = random.randint(10, 20)  # Exceeds alert threshold (pending > 10)
+    pending = random.randint(50, 100)  # High pending spike  # Exceeds alert threshold (pending > 10)
     on_the_way = random.randint(5, 20)
     delivered = random.randint(30, 70)
     avg_time = random.uniform(15, 45)
@@ -34,3 +34,4 @@ if __name__ == "__main__":
         simulate_delivery()
         print("[INFO] Sleeping for 1 seconds...")
         time.sleep(1)
+
